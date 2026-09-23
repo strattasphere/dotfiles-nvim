@@ -18,6 +18,17 @@ return {
         explorer = { hidden = true },
       },
     },
+    terminal = {
+      -- Float by default by providing a cmd or configuring win style
+      win = {
+        style = "terminal",
+        -- Floating window settings
+        width = math.ceil(vim.o.columns * 0.8), -- 80% of screen width
+        height = math.ceil(vim.o.lines * 0.7), -- 70% of screen height
+        border = "rounded",
+        title = "Terminal",
+      },
+    },
   },
   -- stylua: ignore
   keys = {
@@ -29,5 +40,8 @@ return {
       end
     end, desc = "Notification History" },
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
+    -- Terminal keymaps
+    { "<leader>ft", function() Snacks.terminal.open() end, desc = "Floating Terminal" },
+    { "<C-t>", function() Snacks.terminal.toggle() end, desc = "Toggle Terminal", mode = { "n", "t" } },
   },
 }
