@@ -22,6 +22,8 @@ return {
         "clangd",
         "cmake-language-server",
         "lua-language-server",
+        "templ",
+        "css-lsp",
         --"csharp-language-server",
       },
     },

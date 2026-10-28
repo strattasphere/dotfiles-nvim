@@ -2,6 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      templ_ls = {},
       fsautocomplete = {},
       omnisharp = {
         handlers = {
