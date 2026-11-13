@@ -7,24 +7,34 @@ return {
     opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
+        -- lua
         "stylua",
+        "lua-language-server",
         "shfmt",
-        "shfmt",
+        -- nix
         "flake8",
+        "nil",
+        -- html/x + CSS
         "htmx-lsp",
         "html-lsp",
-        "templ",
         "tailwindcss-language-server",
+        "css-lsp",
+        -- JavaScript/TypeScript
+        "svelte-language-server",
+        -- golang
         "gopls",
         "golangci-lint",
         "golangci-lint-langserver",
-        "nil",
+        "templ",
+        -- C
         "clangd",
         "cmake-language-server",
-        "lua-language-server",
-        "templ",
-        "css-lsp",
+        -- rust
+        -- "rust-analyzer",
+        -- "rust-glancer",
+        -- C#
         --"csharp-language-server",
+        "roslyn-language-server",
       },
     },
     ---@param opts MasonSettings | {ensure_installed: string[]}

@@ -30,6 +30,7 @@ return {
         "markdown",
         "markdown_inline",
         "python",
+        "nix",
         "query",
         "regex",
         "typescript",
@@ -40,6 +41,7 @@ return {
         "cpp",
         "c_sharp",
         "templ",
+        "svelte",
       })
     end,
   },
