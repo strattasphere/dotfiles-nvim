@@ -1,3 +1,4 @@
+-- mason.lua
 return {
   {
     "mason-org/mason.nvim",
