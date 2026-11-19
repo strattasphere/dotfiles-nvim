@@ -120,3 +120,6 @@ opt.wrap = true -- Enable line wrap
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+-- prefers .git / go.mod markers, LSP only as fallback
+vim.g.root_spec = { { ".git" }, "lsp" }
